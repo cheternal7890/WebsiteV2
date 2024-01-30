@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a1d40;
+}
+
+/* Top Menu */
+
+@media only screen and (min-width: 768px) {
+  .topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .navMenu li {
+    display: inline;
+    margin: 10px;
+  }
+
+  .navMenu a {
+    text-decoration: none;
+  }
+
+  .navMenu a:hover {
+    text-decoration: underline;
+    color: #7ad7cd;
+    transition: color 100ms;
+  }
+}
+
+/* About Me */
+
+@media only screen and (min-width: 768px) {
+  .mainBodyContainer {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1600px;
+  }
+
+  .landingPageDetails {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .landingDescription {
+      opacity: 0.65;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Project Section */
+
+  .sectionDescription {
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 15px;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .sectionDescription a:hover {
+    text-decoration: underline;
+    color: #7ad7cd;
+    transition: color 100ms;
+  }
+}
+
+/* Cards */
+@media only screen and (min-width: 768px) {
+  .projectCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+  }
+
+  .card {
+    width: 500px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #1a1d40;
+    border-radius: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+
+  .cardPreviewImage{
+    border-radius: 5px;
+  }
+
+  .projectCardsContainer :hover {
+    background-color: #3c4764;
+    transition: background-color 100ms;
+
+    .projectTitle {
+      color: #7ad7cd;
+      transition: color 100ms;
+    }
+  }
+
+  .projectTitle {
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .projectDescription {
+    color: white;
+  }
+}
+
+/* Footer */
+
+@media only screen and (min-width: 768px) {
+  .footerContainer {
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .footerIcons {
+    list-style: none;
+  }
+
+  .footerItem a {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footerItem :hover {
+    color: #7ad7cd;
+    transition: color 100ms;
+  }
+}
