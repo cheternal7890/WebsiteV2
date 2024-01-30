@@ -14,7 +14,7 @@ body {
 
 /* Top Menu */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 240px) {
   .topHeader {
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ body {
 
 /* About Me */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 240px) {
   .mainBodyContainer {
     margin: 0 auto;
     text-align: center;
@@ -66,7 +66,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 240px) {
   /* Project Section */
 
   .sectionDescription {
@@ -87,7 +87,7 @@ body {
 }
 
 /* Cards */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 240px) {
   .projectCardsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -106,8 +106,9 @@ body {
     text-decoration: none;
   }
 
-  .cardPreviewImage{
+  .cardPreviewImage {
     border-radius: 5px;
+    width: 100%;
   }
 
   .projectCardsContainer :hover {
@@ -133,7 +134,7 @@ body {
 
 /* Footer */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 240px) {
   .footerContainer {
     margin-top: 100px;
     text-align: center;
