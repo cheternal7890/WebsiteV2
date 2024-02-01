@@ -1,89 +1,94 @@
 * {
   margin: 0;
-  padding: 10px 10px;
+  padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   scroll-behavior: smooth;
 }
 
 body {
-  background-image: linear-gradient(#061a21, #0d4455);
+  background-color: #1a1d40;
 }
 
 /* Top Menu */
 
 @media only screen and (min-width: 240px) {
-  .navigationSpacer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .icon-item {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 650;
-    font-size: 24px;
-    color: #1ce783;
-  }
-
-  .icon i:hover {
-    background-color: #363d45;
-    border-radius: 25px;
-  }
-}
-
-@media only screen and (min-width: 240px) {
-  .nav {
-    justify-content: space-between;
+  .topHeader {
     display: flex;
     align-items: center;
-  }
-
-  .navMenu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    font-size: 25px;
-  }
-
-  .navMenu i:hover {
-    background-color: #363d45;
-    border-radius: 25px;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
   }
 
   .navMenu li {
-    display: inline-block;
+    display: inline;
+    margin: 10px;
   }
 
   .navMenu a {
     text-decoration: none;
-    padding: 5px 15px;
-    color: #9ea2a5;
-    transition: color 100ms;
   }
 
   .navMenu a:hover {
-    color: #fbfeff;
-    border-radius: 5px;
-    background-color: #363d45;
+    text-decoration: underline;
+    color: #7ad7cd;
+    transition: color 100ms;
   }
 }
 
-/* Movies For You Section */
+/* About Me */
 
 @media only screen and (min-width: 240px) {
   .mainBodyContainer {
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
     max-width: 1600px;
+  }
+
+  .landingPageDetails {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .landingDescription {
+      opacity: 0.65;
+    }
   }
 }
 
-/* Big Main Cards */
 @media only screen and (min-width: 240px) {
-  .mainCardsContainer {
+  /* Project Section */
+
+  .sectionDescription {
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 15px;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .sectionDescription a:hover {
+    text-decoration: underline;
+    color: #7ad7cd;
+    transition: color 100ms;
+  }
+}
+
+/* Cards */
+@media only screen and (min-width: 240px) {
+  .projectCardsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -91,76 +96,41 @@ body {
   }
 
   .card {
-    width: 600px;
-    flex-direction: row;
+    width: 500px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #1a1d40;
+    border-radius: 20px;
+    text-align: left;
     margin-bottom: 15px;
     text-decoration: none;
   }
 
   .cardPreviewImage {
+    border-radius: 6px;
+    border-color: #3c4764;
     object-fit: contain;
     width: 100%;
   }
 
-  .movieTitle {
+  .projectCardsContainer :hover {
+    background-color: #3c4764;
+    transition: background-color 100ms;
+
+    .projectTitle {
+      color: #7ad7cd;
+      transition: color 100ms;
+    }
+  }
+
+  .projectTitle {
     color: white;
     font-weight: 500;
+    margin-top: 10px;
   }
 
-  .movieDescription {
+  .projectDescription {
     color: white;
-    opacity: 0.5;
-  }
-}
-
-.card {
-  width: 30%; /* Adjust as needed */
-  flex-shrink: 0; /* Prevent cards from shrinking */
-  margin-right: 20px; /* Add some spacing between cards */
-}
-
-.card:last-child {
-  margin-right: 0; /* Remove right margin from the last card */
-}
-
-.miniCards {
-  display: flex;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: mandatory;
-  white-space: nowrap;
-}
-
-.miniCards::-webkit-scrollbar {
-  display: none;
-}
-
-.movieDescriptionSmall {
-  margin-top: -20px;
-  opacity: 0.8;
-}
-
-.cardPreviewImage {
-  border-color: #3c4764;
-  object-fit: contain;
-  width: 100%;
-}
-
-.card:hover {
-  background-color: #757f9b7d;
-  transition: background-color 100ms;
-}
-
-@media only screen and (max-width: 768px) {
-  .card {
-    width: 45%; /* Adjust as needed for smaller screens */
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .card {
-    width: 100%; /* Adjust as needed for mobile screens */
-    margin-right: 0; /* Remove margin for better responsiveness */
   }
 }
 
@@ -168,6 +138,7 @@ body {
 
 @media only screen and (min-width: 240px) {
   .footerContainer {
+    margin-top: 100px;
     text-align: center;
     justify-content: center;
   }
@@ -178,5 +149,20 @@ body {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+  }
+
+  .footerIcons {
+    list-style: none;
+  }
+
+  .footerItem a {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footerItem :hover {
+    color: #7ad7cd;
+    transition: color 100ms;
   }
 }
