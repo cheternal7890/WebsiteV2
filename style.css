@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #1a1d40;
+  background-color: #131630;
 }
 
 /* Top Menu */
@@ -58,6 +58,7 @@ body {
 
     h4 {
       margin-bottom: 10px;
+      opacity: 0.90;
     }
 
     .landingDescription {
@@ -71,7 +72,7 @@ body {
 
   .sectionDescription {
     text-align: center;
-    height: 10vh;
+    height: 8vh;
     margin-bottom: 15px;
 
     h1 {
