@@ -10,150 +10,140 @@
 
 body {
   background-color: #131630;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 /* Top Menu */
 
-@media only screen and (min-width: 240px) {
-  .topHeader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 20px;
-  }
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
 
-  .navMenu li {
-    display: inline;
-    margin: 10px;
-  }
 
-  .navMenu a {
-    text-decoration: none;
-  }
+.navMenu li {
+  display: inline;
+  margin: 10px;
+}
 
-  .navMenu a:hover {
-    text-decoration: underline;
-    color: #7ad7cd;
-    transition: color 100ms;
-  }
+.navMenu a {
+  text-decoration: none;
+}
+
+.navMenu a:hover {
+  text-decoration: underline;
+  color: #7ad7cd;
+  transition: color 100ms;
 }
 
 /* About Me */
 
-@media only screen and (min-width: 240px) {
-  .mainBodyContainer {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 1600px;
+.landingPageDetails {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+
+  h4 {
+    margin-bottom: 10px;
   }
 
-  .landingPageDetails {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-
-    h4 {
-      margin-bottom: 10px;
-      opacity: 0.90;
-    }
-
-    .landingDescription {
-      opacity: 0.65;
-    }
+  .landingDescription {
+    opacity: 0.75;
   }
 }
 
-@media only screen and (min-width: 240px) {
-  /* Project Section */
+/* Project Section */
 
-  .sectionDescription {
-    text-align: center;
-    height: 8vh;
-    margin-bottom: 15px;
+.sectionPageDetails {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
-    h1 {
-      margin-bottom: 10px;
-    }
+.sectionDescription {
+  height: 8vh;
+  margin-bottom: 15px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 10px;
   }
+}
 
-  .sectionDescription a:hover {
-    text-decoration: underline;
+.sectionDescription a:hover {
+  text-decoration: underline;
+  color: #7ad7cd;
+  transition: color 100ms;
+}
+
+/* Cards */
+
+.projectCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.card {
+  width: 485px;
+  padding: 20px;
+  flex-direction: column;
+  background-color: #1f224a;
+  border-radius: 20px;
+  text-align: left;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.cardPreviewImage {
+  border-radius: 6px;
+  border-color: #3c4764;
+  object-fit: contain;
+  width: 100%;
+}
+
+.projectCardsContainer :hover {
+  background-color: #3c4764;
+  transition: background-color 100ms;
+
+  .projectTitle {
     color: #7ad7cd;
     transition: color 100ms;
   }
 }
 
-/* Cards */
-@media only screen and (min-width: 240px) {
-  .projectCardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-decoration: none;
-  }
+.projectTitle {
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
 
-  .card {
-    width: 500px;
-    padding: 20px;
-    flex-direction: column;
-    background-color: #1a1d40;
-    border-radius: 20px;
-    text-align: left;
-    margin-bottom: 15px;
-    text-decoration: none;
-  }
-
-  .cardPreviewImage {
-    border-radius: 6px;
-    border-color: #3c4764;
-    object-fit: contain;
-    width: 100%;
-  }
-
-  .projectCardsContainer :hover {
-    background-color: #3c4764;
-    transition: background-color 100ms;
-
-    .projectTitle {
-      color: #7ad7cd;
-      transition: color 100ms;
-    }
-  }
-
-  .projectTitle {
-    color: white;
-    font-weight: 500;
-    margin-top: 10px;
-  }
-
-  .projectDescription {
-    color: white;
-  }
+.projectDescription {
+  color: white;
 }
 
 /* Footer */
 
 @media only screen and (min-width: 240px) {
   .footerContainer {
-    margin-top: 100px;
+    margin-top: 25vh;
     text-align: center;
-    justify-content: center;
-  }
-
-  .footer {
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
   }
 
   .footerIcons {
     list-style: none;
+    font-size: 32px;
   }
 
   .footerItem a {
@@ -164,6 +154,6 @@ body {
 
   .footerItem :hover {
     color: #7ad7cd;
-    transition: color 100ms;
+    transition: color 0.1s;
   }
 }
