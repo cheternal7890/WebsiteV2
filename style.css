@@ -47,7 +47,6 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  font-size: 16px;
 
   h4 {
     margin-bottom: 10px;
@@ -64,18 +63,12 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
   justify-content: center;
 }
 
 .sectionDescription {
-  height: 8vh;
-  margin-bottom: 15px;
+  margin-bottom: 5vh;
   text-align: center;
-
-  h1 {
-    margin-bottom: 10px;
-  }
 }
 
 .sectionDescription a:hover {
@@ -137,25 +130,23 @@ body {
 
 /* Footer */
 
-@media only screen and (min-width: 240px) {
-  .footerContainer {
-    margin-top: 25vh;
-    text-align: center;
-  }
+.footerContainer {
+  margin-top: 25vh;
+  text-align: center;
+}
 
-  .footerIcons {
-    list-style: none;
-    font-size: 32px;
-  }
+.footerIcons {
+  list-style: none;
+  font-size: 32px;
+}
 
-  .footerItem a {
-    display: inline;
-    flex-direction: row;
-    align-items: center;
-  }
+.footerItem a {
+  display: inline;
+  flex-direction: row;
+  align-items: center;
+}
 
-  .footerItem :hover {
-    color: #7ad7cd;
-    transition: color 0.1s;
-  }
+.footerItem :hover {
+  color: #7ad7cd;
+  transition: color 0.1s;
 }
